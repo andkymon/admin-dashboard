@@ -75,8 +75,8 @@
 
 .user {
   grid-column: 1 / -1;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: rgb(89, 42, 165);
 }
 
