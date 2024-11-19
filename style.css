@@ -62,7 +62,7 @@
   background-color: white;
   display: grid;
   grid-template-rows: 2fr 3fr;
-  grid-template-columns: 7fr 3fr;
+  grid-template-columns: 1fr 320px;
 }
 
 .search {
@@ -132,4 +132,3 @@ ul {
   grid-row: 2 / -1;
   background-color: gray;
 }
-
