@@ -103,11 +103,13 @@ ul {
 
 .sidebar .logo,
 .sidebar nav {
-  padding: 8px 15%;
+  padding: 16px 15%;
 }
 
 .sidebar .logo {
   font-size: 2.5rem;
+  font-family: logo, sans-serif;
+  text-wrap: nowrap;
 }
 
 .sidebar ul {
