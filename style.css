@@ -55,19 +55,28 @@
   grid-template-columns: 7fr 3fr;
 }
 
-.header .search {
+.search {
   background-color: brown;
 }
 
-.header .profile {
+.profile {
   background-color: rgb(42, 165, 108);
 }
 
-.header .user {
+.user {
   grid-column: 1 / -1;
-  background-color: rgb(79, 42, 165);
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(89, 42, 165);
 }
 
+.user-info {
+  background-color: aqua;
+}
+
+.user-controls {
+  background-color: rgb(251, 255, 0);
+}
 
 .sidebar {
   grid-row: 1 / -1;
