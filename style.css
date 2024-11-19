@@ -110,6 +110,14 @@ ul {
   font-size: 2.5rem;
   font-family: logo, sans-serif;
   text-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 8px;
 }
 
 .sidebar ul {
