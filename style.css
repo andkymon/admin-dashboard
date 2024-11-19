@@ -36,4 +36,28 @@
     text-wrap: balance;
   }
 
-  
+:root, body {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header {
+    grid-column: 2 / 3;
+    background-color: white;
+}
+
+.sidebar {
+    grid-row: 1 / -1;
+    background-color: blue;
+}
+
+.main-content {
+    grid-row: 2 / -1;
+    background-color: gray;
+}
