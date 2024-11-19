@@ -55,9 +55,16 @@
 .sidebar {
     grid-row: 1 / -1;
     background-color: blue;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .main-content {
     grid-row: 2 / -1;
     background-color: gray;
+}
+
+ul {
+  list-style: none;
 }
