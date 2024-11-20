@@ -12,12 +12,6 @@
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
-:root {
-    --right-section-padding: 32px 64px;
-    --bg-color: rgb(160, 180, 160);
-    --glow: 0px 0px 4px 4px;
-    height: 100%;
-  }
   *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -46,13 +40,9 @@
     text-wrap: balance;
   }
 
-:root, body {
-    height: 100%;
-}
-
 /*Main Container*/
 .container {
-  height: 100%;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 320px 1fr;
   grid-template-rows: 1fr 4fr;
