@@ -87,14 +87,12 @@
   display: flex;
   flex-direction: column;
   color: white;
+  padding: 32px 48px;
+  gap: 64px;
 }
 
 ul {
   list-style: none;
-}
-
-.sidebar > * {
-  padding: 32px 48px;
 }
 
 .sidebar .logo {
