@@ -81,7 +81,7 @@
 }
 
 .search-bar {
-  flex: 1; 
+  flex: 0 1 800px; 
   background-color: white;
   height: var(--search-bar-height);
   padding: 1px calc(var(--search-bar-height) / 2); 
