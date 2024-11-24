@@ -63,10 +63,9 @@
   grid-column: 2 / 3;
   display: grid;
   grid-template-rows: 2fr 3fr;
-  grid-template-columns: 1fr 360px;
+  grid-template-columns: 1fr 320px;
 }
 
-/*Header Elements - Search Area*/
 .search {
   background-color: var(--color-palette-light);
   padding: var(--container-padding);
@@ -74,7 +73,7 @@
   align-items: center;
 }
 
-.search img { /*Variable - Same as Nav Icons*/
+.search img { 
   width: var(--icon-size);
   height: var(--icon-size);
   margin-right: var(--icon-margin);
@@ -111,10 +110,52 @@
   display: none;
 }
 
-
+/*Header Elements - Profile Area*/
 .profile {
-  background-color: rgb(42, 165, 108);
+  background-color: var(--color-palette-light);
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: var(--container-padding);
 }
+
+.profile > [alt="bell icon"] { 
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-right: var(--icon-margin);
+
+}
+
+.profile [alt="profile picture"] {
+  width: 48px;
+  height: 48px;
+  margin-right: var(--icon-margin);
+  border-radius: 50%;
+}
+
+.profile a {
+  color: black;
+  text-decoration: none;
+  font-family: open-sans, sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .user {
   grid-column: 1 / -1;
