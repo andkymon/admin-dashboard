@@ -65,7 +65,9 @@
   grid-column: 2 / 3;
   display: grid;
   grid-template-rows: fit-content 1fr;
-  grid-template-columns: 1fr 320px;
+  grid-template-columns: 1fr 320px; /*Variable*/
+  box-shadow: 0px 2px 16px gray;
+  z-index: 1;
 }
 
 .search {
@@ -241,7 +243,6 @@ button:hover {
   width: var(--icon-size);
   height: var(--icon-size);
   margin-right: var(--icon-margin);
-
 }
 
 .sidebar > nav li {
@@ -252,9 +253,9 @@ button:hover {
 /*Main Content Elements*/
 .main-content {
   grid-row: 2 / -1;
-  background-color: gray;
+  background-color: #C9ADA7;
   display: grid;
-  grid-template-columns: 1fr 360px;
+  grid-template-columns: 1fr 320px;
   grid-auto-flow: column;
 }
 
@@ -262,8 +263,25 @@ button:hover {
   background-color: rgb(226, 43, 202);
 }
 
+/*Main Content Elements - News Area*/
 .news {
-  background-color: blueviolet;
+  background-color: #C9ADA7;
+  display: grid;
+  grid-template-rows: repeat(2, 48px 280px);
 }
 
+.news h2 {
+  font-size: 1.25rem;
+  font-family: open-sans, sans-serif;
+  font-weight: bold;
+  padding: 0 32px;
+  align-self: end;
+}
+
+.announcements, 
+.trending {
+  background-color: white;
+  margin: 8px 32px;
+  border-radius: 8px;
+}
 
