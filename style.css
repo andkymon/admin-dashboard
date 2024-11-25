@@ -47,6 +47,7 @@
   --color-palette-light: #C9ADA7;
   --icon-size: 20px;
   --icon-margin: 16px;
+  --pfp-size: 48px;
   --search-bar-height: 36px;
   --logo-size: 2.5rem;
   --container-padding: 16px 48px;
@@ -136,8 +137,8 @@
 }
 
 .profile [alt="profile picture"] {
-  width: 48px; 
-  height: 48px; 
+  width: var(--pfp-size); 
+  height: var(--pfp-size); 
   margin-right: var(--icon-margin);
   border-radius: 50%; 
 }
@@ -297,3 +298,33 @@ button:hover {
   margin: 8px 0px;
 }
 
+.trending {
+  display: grid;
+  gap: 16px;
+}
+
+.trending-entry {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+  font-size: 0.8rem;
+  font-family: open-sans, sans-serif;
+}
+
+.trending-entry img {
+  min-width: var(--pfp-size);
+  height: var(--pfp-size);
+  margin-right: 8px;
+  border-radius: 50%;
+  grid-row: 1 / -1;
+}
+
+.trending-entry > span:nth-of-type(1) {
+  align-self: end;
+  font-weight: bold;
+}
+
+.trending-entry > span:nth-of-type(2) {
+  align-self: start;
+}
