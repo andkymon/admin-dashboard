@@ -54,6 +54,8 @@
   --main-content-side-padding: 32px;
   --main-content-h2-size: 48px;
   --cards-vertical-margin: 8px;
+  --cards-padding: 16px 32px;
+  --cards-border-radius: 8px;
 }
 
 /*Main Container*/
@@ -264,11 +266,14 @@ button:hover {
   grid-auto-flow: column;
 }
 
+.main-content > * {
+  padding: 0 var(--main-content-side-padding);
+}
+
 .main-content h2 {
   font-size: 1.25rem;
   font-family: open-sans, sans-serif;
   font-weight: bold;
-  padding: 0 var(--main-content-side-padding);
   align-self: end;
 }
 
@@ -282,9 +287,9 @@ button:hover {
 .announcements, 
 .trending {
   background-color: white;
-  margin: var(--cards-vertical-margin) var(--main-content-side-padding);
-  border-radius: 8px;
-  padding: 16px var(--main-content-side-padding);
+  margin: var(--cards-vertical-margin) 0;
+  border-radius: var(--cards-border-radius);
+  padding: var(--cards-padding); 
 }
 
 .announcements {
@@ -336,7 +341,7 @@ button:hover {
 }
 
 .cards {
-  padding: 16px var(--main-content-side-padding);
+  margin: var(--cards-vertical-margin) 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 16px;
@@ -344,7 +349,7 @@ button:hover {
 
 .card {
   background-color: white;
-  border-radius: 8px; /*Variable*/
-  padding: 16px var(--main-content-side-padding);
-  border-left: 8px solid #4A4E69;
+  border-radius: var(--cards-border-radius);
+  padding: var(--cards-padding);
+  border-left: var(--cards-border-radius) solid #4A4E69; 
 } 
