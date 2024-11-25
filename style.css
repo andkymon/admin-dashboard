@@ -57,6 +57,7 @@
   --cards-vertical-margin: 8px;
   --cards-padding: 16px 32px;
   --cards-border-radius: 8px;
+  --shadow-under: 0px 8px 16px -4px gray;
 }
 
 /*Main Container*/
@@ -74,7 +75,7 @@
   display: grid;
   grid-template-rows: fit-content 1fr;
   grid-template-columns: 1fr 320px; 
-  box-shadow: 0px 2px 16px gray;
+  box-shadow: var(--shadow-under);
   z-index: 1;
 }
 
@@ -291,6 +292,8 @@ button:hover {
   margin: var(--cards-vertical-margin) 0;
   border-radius: var(--cards-border-radius);
   padding: var(--cards-padding); 
+  box-shadow: var(--shadow-under);
+  z-index: 1;
 }
 
 .announcements {
@@ -354,4 +357,6 @@ button:hover {
   padding: var(--cards-padding);
   border-left: var(--cards-border-radius) solid var(--color-palette-darker); 
   font-family: open-sans, sans-serif;
+  box-shadow: var(--shadow-under);
+  z-index: 1;
 } 
