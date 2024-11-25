@@ -360,3 +360,14 @@ button:hover {
   box-shadow: var(--shadow-under);
   z-index: 1;
 } 
+
+.interactions {
+  text-align: right;
+  margin-top: 8px;
+}
+
+.interactions img {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-left: var(--icon-margin);
+}
