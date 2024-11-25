@@ -42,6 +42,7 @@
   }
 /*Variables*/
 :root {
+  --color-palette-darker: #4A4E69;
   --color-palette-dark: #9A8C98;
   --color-palette-lighter: #F2E9E4;
   --color-palette-light: #C9ADA7;
@@ -351,5 +352,6 @@ button:hover {
   background-color: white;
   border-radius: var(--cards-border-radius);
   padding: var(--cards-padding);
-  border-left: var(--cards-border-radius) solid #4A4E69; 
+  border-left: var(--cards-border-radius) solid var(--color-palette-darker); 
+  font-family: open-sans, sans-serif;
 } 
