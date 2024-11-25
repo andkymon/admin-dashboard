@@ -43,7 +43,8 @@
 /*Variables*/
 :root {
   --color-palette-dark: #9A8C98;
-  --color-palette-light: #F2E9E4;
+  --color-palette-lighter: #F2E9E4;
+  --color-palette-light: #C9ADA7;
   --icon-size: 20px;
   --icon-margin: 16px;
   --search-bar-height: 36px;
@@ -61,11 +62,11 @@
 
 /*Header Elements*/
 .header {
-  background-color: var(--color-palette-light);
+  background-color: var(--color-palette-lighter);
   grid-column: 2 / 3;
   display: grid;
   grid-template-rows: fit-content 1fr;
-  grid-template-columns: 1fr 320px; /*Variable*/
+  grid-template-columns: 1fr 320px; 
   box-shadow: 0px 2px 16px gray;
   z-index: 1;
 }
@@ -265,9 +266,9 @@ button:hover {
 
 /*Main Content Elements - News Area*/
 .news {
-  background-color: #C9ADA7;
+  background-color: var(--color-palette-light);
   display: grid;
-  grid-template-rows: repeat(2, 48px 280px);
+  grid-template-rows: repeat(2, 48px min-content);
 }
 
 .news h2 {
@@ -283,5 +284,16 @@ button:hover {
   background-color: white;
   margin: 8px 32px;
   border-radius: 8px;
+  padding: 16px 32px;
+}
+
+.announcements {
+  font-size: 0.7rem;
+  font-family: open-sans, sans-serif;
+  display: grid;
+}
+
+.announcements hr {
+  margin: 8px 0px;
 }
 
